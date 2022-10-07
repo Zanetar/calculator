@@ -1,9 +1,9 @@
 def plus():
     try:
-        print("Jakie liczby chcesz dodać?")
+        print('Jakie liczby chcesz dodać?')
         while True:
-            first = float(input("Pierwsza liczba"))
-            second = float(input("Druga liczba"))
+            first = float(input('Pierwsza liczba'))
+            second = float(input('Druga liczba'))
             result = first + second
             print(f'Wynik działania {first} + {second}  = {result}')
             choice=input('Jeżeli chcesz wyjść wybierz x w innym przypadku wybierz y').upper()
@@ -23,10 +23,10 @@ def plus():
 
 def minus():
     try:
-        print("Jakie liczby chcesz odjąć?")
+        print('Jakie liczby chcesz odjąć?')
         while True:
-            first = float(input("Pierwsza liczba"))
-            second = float(input("Druga liczba"))
+            first = float(input('Pierwsza liczba'))
+            second = float(input('Druga liczba'))
             result = first - second
             print(f'Wynik działania {first} - {second}  = {result}')
             choice = input('Jeżeli chcesz wyjść wybierz x w innym przypadku wybierz y').upper()
@@ -44,10 +44,10 @@ def minus():
 
 def multi():
     try:
-        print("Jakie liczby chcesz mnożyć?")
+        print('Jakie liczby chcesz mnożyć?')
         while True:
-            first = float(input("Pierwsza liczba"))
-            second = float(input("Druga liczba"))
+            first = float(input('Pierwsza liczba'))
+            second = float(input('Druga liczba'))
             result = first * second
             print(f'Wynik działania {first} * {second}  = {result}')
             choice = input('Jeżeli chcesz wyjść wybierz x w innym przypadku wybierz y').upper()
@@ -65,10 +65,10 @@ def multi():
 
 def division():
     try:
-        print("Jakie liczby chcesz dzielić?")
+        print('Jakie liczby chcesz dzielić?')
         while True:
-            first = float(input("Pierwsza liczba"))
-            second = float(input("Druga liczba"))
+            first = float(input('Pierwsza liczba'))
+            second = float(input('Druga liczba'))
             result = first / second
             print(f'Wynik działania {first} / {second}  = {result}')
             choice = input('Jeżeli chcesz wyjść wybierz x w innym przypadku wybierz y').upper()
@@ -78,7 +78,7 @@ def division():
             elif choice == 'Y':
                 continue
             else:
-                print('podano zły znak. Do widzenia!')
+                print('Podano zły znak. Do widzenia!')
                 break
         return
     except ZeroDivisionError: print('Nie dziel przez zero!')
